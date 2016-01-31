@@ -14,9 +14,9 @@ export default class Recipe extends React.Component {
         return (
             <tr>
                 <td><p><strong>{number * amount} {measure} {name.toLowerCase()}</strong></p></td>
-                // <td>{(number*fat).toFixed(1)}</td>
-                // <td>{(number*carb).toFixed(1)}</td>
-                // <td>{(number*protein).toFixed(1)}</td>
+                <td>{(number*fat).toFixed(1)}</td>
+                <td>{(number*carb).toFixed(1)}</td>
+                <td>{(number*protein).toFixed(1)}</td>
             </tr>
         );
     }

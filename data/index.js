@@ -44,68 +44,18 @@ import {
     GreekYoghurtWithGranola
 } from './recipies/snack';
 
+const Breakfast = [ '07:00', 'Frukost', AvocadoBreakfast, EggBreakfast, ChickenSandwich, SourMilkAndGranolaBreakfast, MilkAndOatmealBreakfast, {}, {} ];
+const Snack1 = [ '09:30', 'Mellanmål', SourMilkWithBlueBerries, Peanut, {}, {}, {}, {}, {} ];
+const Lunch = [ '12:00', 'Lunch', ChickenWraps, TunaSalad, Omelette, ChickenSalad, {}, {}, {} ];
+const Snack2 = [ '15:30', 'Mellanmål', FruitAndCheese, CottageCheeseWithAppleSauce, {}, {}, {}, {}, {} ];
+const Dinner = [ '18:00', 'Middag', LemonSalmon, Chicken, {}, {}, MarinatedBeans, {}, Chicken ];
+const Snack3 = [ '21:00', 'Mellanmål', BananaWithPeanutButter, GreekYoghurtWithGranola, {}, {}, {}, {}, {} ];
+
 export default [
-    {
-        DAY: MONDAY,
-        BREAKFAST: AvocadoBreakfast,
-        SNACK_1: SourMilkWithBlueBerries,
-        LUNCH: ChickenWraps,
-        SNACK_2: FruitAndCheese,
-        DINNER: LemonSalmon,
-        SNACK_3: BananaWithPeanutButter,
-    },
-    {
-        DAY: TUESDAY,
-        BREAKFAST: EggBreakfast,
-        SNACK_1: Peanut,
-        LUNCH: TunaSalad,
-        SNACK_2: CottageCheeseWithAppleSauce,
-        DINNER: Chicken,
-        SNACK_3: GreekYoghurtWithGranola,
-    },
-    {
-        DAY: WEDNESDAY,
-        BREAKFAST: ChickenSandwich,
-        SNACK_1: { },
-        LUNCH: Omelette,
-        SNACK_2: { },
-        DINNER: { },
-        SNACK_3: { },
-    },
-    {
-        DAY: THURSDAY,
-        BREAKFAST: SourMilkAndGranolaBreakfast,
-        SNACK_1: { },
-        LUNCH: ChickenSalad,
-        SNACK_2: { },
-        DINNER: { },
-        SNACK_3: { },
-    },
-    {
-        DAY: FRIDAY,
-        BREAKFAST: MilkAndOatmealBreakfast,
-        SNACK_1: { },
-        LUNCH: { },
-        SNACK_2: { },
-        DINNER: MarinatedBeans,
-        SNACK_3: { },
-    },
-    {
-        DAY: SATURDAY,
-        BREAKFAST: {},
-        SNACK_1: { },
-        LUNCH: { },
-        SNACK_2: { },
-        DINNER: { },
-        SNACK_3: { },
-    },
-    {
-        DAY: SUNDAY,
-        BREAKFAST: {},
-        SNACK_1: { },
-        LUNCH: { },
-        SNACK_2: { },
-        DINNER: Chicken,
-        SNACK_3: { },
-    }
+    Breakfast,
+    Snack1,
+    Lunch,
+    Snack2,
+    Dinner,
+    Snack3
 ];
