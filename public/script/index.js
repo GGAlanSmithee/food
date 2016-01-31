@@ -131,63 +131,28 @@ var FoodTableRow = function (_React$Component) {
                 _react2.default.createElement(
                     'td',
                     { width: '200' },
-                    this.props.foodData.DAY
-                ),
-                _react2.default.createElement(
-                    'td',
-                    { width: '200' },
                     _react2.default.createElement(
-                        _reactRouter.Link,
-                        { to: '/recipe/' + this.props.foodData.BREAKFAST.id },
-                        this.props.foodData.BREAKFAST.name
+                        'small',
+                        null,
+                        this.props.foodData[0]
                     )
                 ),
                 _react2.default.createElement(
                     'td',
                     { width: '200' },
-                    _react2.default.createElement(
-                        _reactRouter.Link,
-                        { to: '/recipe/' + this.props.foodData.SNACK_1.id },
-                        this.props.foodData.SNACK_1.name
-                    )
+                    this.props.foodData[1]
                 ),
-                _react2.default.createElement(
-                    'td',
-                    { width: '200' },
-                    _react2.default.createElement(
-                        _reactRouter.Link,
-                        { to: '/recipe/' + this.props.foodData.LUNCH.id },
-                        this.props.foodData.LUNCH.name
-                    )
-                ),
-                _react2.default.createElement(
-                    'td',
-                    { width: '200' },
-                    _react2.default.createElement(
-                        _reactRouter.Link,
-                        { to: '/recipe/' + this.props.foodData.SNACK_2.id },
-                        this.props.foodData.SNACK_2.name
-                    )
-                ),
-                _react2.default.createElement(
-                    'td',
-                    { width: '200' },
-                    _react2.default.createElement(
-                        _reactRouter.Link,
-                        { to: '/recipe/' + this.props.foodData.DINNER.id },
-                        this.props.foodData.DINNER.name
-                    )
-                ),
-                _react2.default.createElement(
-                    'td',
-                    { width: '200' },
-                    _react2.default.createElement(
-                        _reactRouter.Link,
-                        { to: '/recipe/' + this.props.foodData.SNACK_3.id },
-                        this.props.foodData.SNACK_3.name
-                    )
-                ),
-                _react2.default.createElement('td', { width: '200' })
+                this.props.foodData.slice(2).map(function (data, i) {
+                    return _react2.default.createElement(
+                        'td',
+                        { width: '200', key: i },
+                        _react2.default.createElement(
+                            _reactRouter.Link,
+                            { to: '/recipe/' + data.id },
+                            data.name
+                        )
+                    );
+                })
             );
         }
     }]);
@@ -196,7 +161,7 @@ var FoodTableRow = function (_React$Component) {
 }(_react2.default.Component);
 
 FoodTableRow.propTypes = {
-    foodData: _react2.default.PropTypes.object.isRequired
+    foodData: _react2.default.PropTypes.array.isRequired
 };
 exports.default = FoodTableRow;
 
@@ -253,145 +218,47 @@ var FoodTable = function (_React$Component) {
                         _react2.default.createElement(
                             'tr',
                             null,
+                            _react2.default.createElement('th', { colSpan: '2', width: '200' }),
                             _react2.default.createElement(
                                 'th',
                                 { width: '200' },
-                                'DAY'
+                                'Måndag'
                             ),
                             _react2.default.createElement(
                                 'th',
                                 { width: '200' },
-                                'BREAKFAST ',
-                                _react2.default.createElement(
-                                    'small',
-                                    null,
-                                    _react2.default.createElement(
-                                        'i',
-                                        null,
-                                        '07:30'
-                                    )
-                                )
+                                'Tisdag'
                             ),
                             _react2.default.createElement(
                                 'th',
                                 { width: '200' },
-                                'SNACK ',
-                                _react2.default.createElement(
-                                    'small',
-                                    null,
-                                    _react2.default.createElement(
-                                        'i',
-                                        null,
-                                        '10:00'
-                                    )
-                                )
+                                'Onsdag'
                             ),
                             _react2.default.createElement(
                                 'th',
                                 { width: '200' },
-                                'LUNCH ',
-                                _react2.default.createElement(
-                                    'small',
-                                    null,
-                                    _react2.default.createElement(
-                                        'i',
-                                        null,
-                                        '13:00'
-                                    )
-                                )
+                                'Torsdag'
                             ),
                             _react2.default.createElement(
                                 'th',
                                 { width: '200' },
-                                'SNACK ',
-                                _react2.default.createElement(
-                                    'small',
-                                    null,
-                                    _react2.default.createElement(
-                                        'i',
-                                        null,
-                                        '15:30'
-                                    )
-                                )
+                                'Fredag'
                             ),
                             _react2.default.createElement(
                                 'th',
                                 { width: '200' },
-                                'DINNER ',
-                                _react2.default.createElement(
-                                    'small',
-                                    null,
-                                    _react2.default.createElement(
-                                        'i',
-                                        null,
-                                        '18:30'
-                                    )
-                                )
+                                'Lördag'
                             ),
                             _react2.default.createElement(
                                 'th',
                                 { width: '200' },
-                                'SNACK ',
-                                _react2.default.createElement(
-                                    'small',
-                                    null,
-                                    _react2.default.createElement(
-                                        'i',
-                                        null,
-                                        '21:00'
-                                    )
-                                )
-                            ),
-                            _react2.default.createElement(
-                                'th',
-                                { width: '200' },
-                                'TOTAL'
+                                'Söndag'
                             )
                         )
                     ),
                     _react2.default.createElement(
                         'tbody',
                         null,
-                        _react2.default.createElement(
-                            'tr',
-                            null,
-                            _react2.default.createElement('td', { widtd: '200' }),
-                            _react2.default.createElement(
-                                'td',
-                                { widtd: '200' },
-                                '2 block'
-                            ),
-                            _react2.default.createElement(
-                                'td',
-                                { widtd: '200' },
-                                '1 block'
-                            ),
-                            _react2.default.createElement(
-                                'td',
-                                { widtd: '200' },
-                                '3 block'
-                            ),
-                            _react2.default.createElement(
-                                'td',
-                                { widtd: '200' },
-                                '1 block'
-                            ),
-                            _react2.default.createElement(
-                                'td',
-                                { widtd: '200' },
-                                '3 block'
-                            ),
-                            _react2.default.createElement(
-                                'td',
-                                { widtd: '200' },
-                                '1 block'
-                            ),
-                            _react2.default.createElement(
-                                'td',
-                                { widtd: '200' },
-                                '11 block'
-                            )
-                        ),
                         _data2.default.map(function (data, i) {
                             return _react2.default.createElement(_foodTableRow2.default, { foodData: data, key: i });
                         })
@@ -534,19 +401,16 @@ var Recipe = function (_React$Component) {
                         )
                     )
                 ),
-                '// ',
                 _react2.default.createElement(
                     'td',
                     null,
                     (number * fat).toFixed(1)
                 ),
-                '// ',
                 _react2.default.createElement(
                     'td',
                     null,
                     (number * carb).toFixed(1)
                 ),
-                '// ',
                 _react2.default.createElement(
                     'td',
                     null,
@@ -1261,63 +1125,14 @@ var _dinner = require('./recipies/dinner');
 
 var _snack = require('./recipies/snack');
 
-exports.default = [{
-    DAY: _constants.MONDAY,
-    BREAKFAST: _breakfast.AvocadoBreakfast,
-    SNACK_1: _snack.SourMilkWithBlueBerries,
-    LUNCH: _lunch.ChickenWraps,
-    SNACK_2: _snack.FruitAndCheese,
-    DINNER: _dinner.LemonSalmon,
-    SNACK_3: _snack.BananaWithPeanutButter
-}, {
-    DAY: _constants.TUESDAY,
-    BREAKFAST: _breakfast.EggBreakfast,
-    SNACK_1: _snack.Peanut,
-    LUNCH: _lunch.TunaSalad,
-    SNACK_2: _snack.CottageCheeseWithAppleSauce,
-    DINNER: _dinner.Chicken,
-    SNACK_3: _snack.GreekYoghurtWithGranola
-}, {
-    DAY: _constants.WEDNESDAY,
-    BREAKFAST: _breakfast.ChickenSandwich,
-    SNACK_1: {},
-    LUNCH: _lunch.Omelette,
-    SNACK_2: {},
-    DINNER: {},
-    SNACK_3: {}
-}, {
-    DAY: _constants.THURSDAY,
-    BREAKFAST: _breakfast.SourMilkAndGranolaBreakfast,
-    SNACK_1: {},
-    LUNCH: _lunch.ChickenSalad,
-    SNACK_2: {},
-    DINNER: {},
-    SNACK_3: {}
-}, {
-    DAY: _constants.FRIDAY,
-    BREAKFAST: _breakfast.MilkAndOatmealBreakfast,
-    SNACK_1: {},
-    LUNCH: {},
-    SNACK_2: {},
-    DINNER: _dinner.MarinatedBeans,
-    SNACK_3: {}
-}, {
-    DAY: _constants.SATURDAY,
-    BREAKFAST: {},
-    SNACK_1: {},
-    LUNCH: {},
-    SNACK_2: {},
-    DINNER: {},
-    SNACK_3: {}
-}, {
-    DAY: _constants.SUNDAY,
-    BREAKFAST: {},
-    SNACK_1: {},
-    LUNCH: {},
-    SNACK_2: {},
-    DINNER: _dinner.Chicken,
-    SNACK_3: {}
-}];
+var Breakfast = ['07:00', 'Frukost', _breakfast.AvocadoBreakfast, _breakfast.EggBreakfast, _breakfast.ChickenSandwich, _breakfast.SourMilkAndGranolaBreakfast, _breakfast.MilkAndOatmealBreakfast, {}, {}];
+var Snack1 = ['09:30', 'Mellanmål', _snack.SourMilkWithBlueBerries, _snack.Peanut, {}, {}, {}, {}, {}];
+var Lunch = ['12:00', 'Lunch', _lunch.ChickenWraps, _lunch.TunaSalad, _lunch.Omelette, _lunch.ChickenSalad, {}, {}, {}];
+var Snack2 = ['15:30', 'Mellanmål', _snack.FruitAndCheese, _snack.CottageCheeseWithAppleSauce, {}, {}, {}, {}, {}];
+var Dinner = ['18:00', 'Middag', _dinner.LemonSalmon, _dinner.Chicken, {}, {}, _dinner.MarinatedBeans, {}, _dinner.Chicken];
+var Snack3 = ['21:00', 'Mellanmål', _snack.BananaWithPeanutButter, _snack.GreekYoghurtWithGranola, {}, {}, {}, {}, {}];
+
+exports.default = [Breakfast, Snack1, Lunch, Snack2, Dinner, Snack3];
 
 },{"./base/constants":9,"./recipies/breakfast":12,"./recipies/dinner":13,"./recipies/lunch":15,"./recipies/snack":16}],12:[function(require,module,exports){
 'use strict';

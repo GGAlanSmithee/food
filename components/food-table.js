@@ -10,28 +10,18 @@ export default class FoodTable extends React.Component {
                 <table>
                     <thead>
                         <tr>
-                            <th width="200">DAY</th>
-                            <th width="200">BREAKFAST <small><i>07:30</i></small></th>
-                            <th width="200">SNACK <small><i>10:00</i></small></th>
-                            <th width="200">LUNCH <small><i>13:00</i></small></th>
-                            <th width="200">SNACK <small><i>15:30</i></small></th>
-                            <th width="200">DINNER <small><i>18:30</i></small></th>
-                            <th width="200">SNACK <small><i>21:00</i></small></th>
-                            <th width="200">TOTAL</th>
+                            <th colSpan="2" width="200"></th>
+                            <th width="200">Måndag</th>
+                            <th width="200">Tisdag</th>
+                            <th width="200">Onsdag</th>
+                            <th width="200">Torsdag</th>
+                            <th width="200">Fredag</th>
+                            <th width="200">Lördag</th>
+                            <th width="200">Söndag</th>
                         </tr>
                     </thead>
                     
                     <tbody>
-                        <tr>
-                            <td widtd="200"></td>
-                            <td widtd="200">2 block</td>
-                            <td widtd="200">1 block</td>
-                            <td widtd="200">3 block</td>
-                            <td widtd="200">1 block</td>
-                            <td widtd="200">3 block</td>
-                            <td widtd="200">1 block</td>
-                            <td widtd="200">11 block</td>
-                        </tr>
                         {foodData.map((data, i) => <FoodTableRow foodData={data} key={i} />)}
                     </tbody>
                 </table>

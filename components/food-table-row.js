@@ -3,20 +3,16 @@ import { Link } from 'react-router';
 
 export default class FoodTableRow extends React.Component {
     static propTypes = {
-        foodData: React.PropTypes.object.isRequired
+        foodData: React.PropTypes.array.isRequired
     };
     
     render() {
         return (
             <tr>
-                <td width="200">{this.props.foodData.DAY}</td>
-                <td width="200"><Link to={`/recipe/${this.props.foodData.BREAKFAST.id}`}>{this.props.foodData.BREAKFAST.name}</Link></td>
-                <td width="200"><Link to={`/recipe/${this.props.foodData.SNACK_1.id}`}>{this.props.foodData.SNACK_1.name}</Link></td>
-                <td width="200"><Link to={`/recipe/${this.props.foodData.LUNCH.id}`}>{this.props.foodData.LUNCH.name}</Link></td>
-                <td width="200"><Link to={`/recipe/${this.props.foodData.SNACK_2.id}`}>{this.props.foodData.SNACK_2.name}</Link></td>
-                <td width="200"><Link to={`/recipe/${this.props.foodData.DINNER.id}`}>{this.props.foodData.DINNER.name}</Link></td>
-                <td width="200"><Link to={`/recipe/${this.props.foodData.SNACK_3.id}`}>{this.props.foodData.SNACK_3.name}</Link></td>
-                <td width="200"></td>
+                <td width="200"><small>{this.props.foodData[0]}</small></td>
+                <td width="200">{this.props.foodData[1]}</td>
+                
+                {this.props.foodData.slice(2).map((data, i) => <td width="200" key={i}><Link to={`/recipe/${data.id}`}>{data.name}</Link></td>)}
             </tr>
         );
     }
