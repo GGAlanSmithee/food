@@ -1,0 +1,14 @@
+export const MONDAY    = 'monday';
+export const TUESDAY   = 'tuesday';
+export const WEDNESDAY = 'wednesday';
+export const THURSDAY  = 'thursday';
+export const FRIDAY    = 'friday';
+export const SATURDAY  = 'saturday';
+export const SUNDAY    = 'sunday';
+export const BREAKFAST = 'breakfast';
+export const SNACK1    = 'snack #1';
+export const LUNCH     = 'lunch';
+export const SNACK2    = 'snack #2';
+export const DINNER    = 'dinner';
+export const SNACK3    = 'snack #3';
+export const DAY       = 'day';
