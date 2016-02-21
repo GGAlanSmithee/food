@@ -18,18 +18,12 @@ export default class Recipe extends React.Component {
                     </tr>
                     <tr>
                         <th></th>
-                        <th>Fat</th>
-                        <th>Carbs</th>
-                        <th>Protein</th>
                     </tr>
                 </thead>
                 
                 <tfoot>
                     <tr>
                         <td>total</td>
-                        <td>{recipe.ingredients.reduce((prev, curr) => { return prev + curr.amount * curr.ingredient.fat}, 0).toFixed(1)}</td>
-                        <td>{recipe.ingredients.reduce((prev, curr) => { return prev + curr.amount * curr.ingredient.carb}, 0).toFixed(1)}</td>
-                        <td>{recipe.ingredients.reduce((prev, curr) => { return prev + curr.amount * curr.ingredient.protein}, 0).toFixed(1)}</td>
                     </tr>
                 </tfoot>
                 
