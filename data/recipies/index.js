@@ -14,12 +14,16 @@ export function getRecipe(id) {
         case Lunch.TunaSalad.id.toString() : return Lunch.TunaSalad;
         case Lunch.Omelette.id.toString() : return Lunch.Omelette;
         case Lunch.ChickenSalad.id.toString() : return Lunch.ChickenSalad;
+        case Lunch.FishSticks.id.toString() : return Lunch.FishSticks;
+        case Lunch.BeanSalasWithFetaAndOlives.id.toString() : return Lunch.BeanSalasWithFetaAndOlives;
         case Snack.SourMilkWithBlueBerries.id.toString() : return Snack.SourMilkWithBlueBerries;
         case Snack.CottageCheeseWithAppleSauce.id.toString() : return Snack.CottageCheeseWithAppleSauce;
         case Snack.FruitAndCheese.id.toString() : return Snack.FruitAndCheese;
         case Snack.Peanut.id.toString() : return Snack.Peanut;
         case Snack.BananaWithPeanutButter.id.toString() : return Snack.BananaWithPeanutButter;
         case Snack.GreekYoghurtWithGranola.id.toString() : return Snack.GreekYoghurtWithGranola;
+        case Snack.MilkAndStrawberries.id.toString() : return Snack.MilkAndStrawberries;
+        case Snack.DriedApricotAndPistachionuts.id.toString() : return Snack.DriedApricotAndPistachionuts;
         case Dinner.Chicken.id.toString() : return Dinner.Chicken;
         case Dinner.MarinatedBeans.id.toString() : return Dinner.MarinatedBeans;
         case Dinner.LemonSalmon.id.toString() : return Dinner.LemonSalmon;

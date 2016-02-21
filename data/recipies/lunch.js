@@ -11,8 +11,12 @@ import {
     Paprica,
     LettuceLeaf,
     TortillaBread,
-    FetaCheeze,
-    MiniBaguette
+    FetaCheese,
+    MiniBaguette,
+    FishStick,
+    Carrot,
+    Lemon,
+    WhiteBeans
 } from '../base/ingredients';
 
 export const TunaSalad = {
@@ -57,7 +61,28 @@ export const ChickenSalad = {
         { amount: 0.5, ingredient: Chicken },
         { amount: 0.2, ingredient: Olives },
         { amount: 2, ingredient: LettuceLeaf },
-        { amount: 0.1, ingredient: FetaCheeze },
+        { amount: 0.1, ingredient: FetaCheese },
         { amount: 1, ingredient: MiniBaguette }
+    ]
+};
+
+export const FishSticks = {
+    id: 205,
+    name: 'Fiskpinnar',
+    ingredients: [
+        { amount: 4, ingredient: FishStick },
+        { amount: 0.25, ingredient: Lemon },
+        { amount: 0.5, ingredient: Carrot }
+    ]
+};
+
+export const BeanSalasWithFetaAndOlives = {
+    id: 206,
+    name: 'Bönallad med fetaost och svarta oliver',
+    ingredients: [
+        { amount: 1, ingredient: WhiteBeans },
+        { amount: 0.1, ingredient: FetaCheese },
+        { amount: 0.1, ingredient: Olives },
+        { amount: 0.5, ingredient: Tomato }
     ]
 };

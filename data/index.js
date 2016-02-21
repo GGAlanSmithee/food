@@ -26,7 +26,9 @@ import {
     TunaSalad,
     Omelette,
     ChickenWraps,
-    ChickenSalad
+    ChickenSalad,
+    FishSticks,
+    BeanSalasWithFetaAndOlives
 } from './recipies/lunch';
 
 import {
@@ -41,15 +43,17 @@ import {
     Peanut,
     BananaWithPeanutButter,
     CottageCheeseWithAppleSauce,
-    GreekYoghurtWithGranola
+    GreekYoghurtWithGranola,
+    MilkAndStrawberries,
+    DriedApricotAndPistachionuts
 } from './recipies/snack';
 
-const Breakfast = [ '07:00', 'Frukost', AvocadoBreakfast, EggBreakfast, ChickenSandwich, SourMilkAndGranolaBreakfast, MilkAndOatmealBreakfast, {}, {} ];
-const Snack1 = [ '09:30', 'Mellanmål', SourMilkWithBlueBerries, Peanut, {}, {}, {}, {}, {} ];
-const Lunch = [ '12:00', 'Lunch', ChickenWraps, TunaSalad, Omelette, ChickenSalad, {}, {}, {} ];
-const Snack2 = [ '15:30', 'Mellanmål', FruitAndCheese, CottageCheeseWithAppleSauce, {}, {}, {}, {}, {} ];
-const Dinner = [ '18:00', 'Middag', LemonSalmon, Chicken, {}, {}, MarinatedBeans, {}, Chicken ];
-const Snack3 = [ '21:00', 'Mellanmål', BananaWithPeanutButter, GreekYoghurtWithGranola, {}, {}, {}, {}, {} ];
+const Breakfast = [ '07:00', 'Frukost',   AvocadoBreakfast,        EggBreakfast,                SourMilkAndGranolaBreakfast,  ChickenSandwich,             MilkAndOatmealBreakfast, {}, {} ];
+const Snack1    = [ '09:30', 'Mellanmål', SourMilkWithBlueBerries, Peanut,                      MilkAndStrawberries,          {},                          SourMilkWithBlueBerries, {}, {} ];
+const Lunch     = [ '12:00', 'Lunch',     ChickenWraps,            TunaSalad,                   Omelette,                     ChickenSalad,                FishSticks,              BeanSalasWithFetaAndOlives, {} ];
+const Snack2    = [ '15:30', 'Mellanmål', FruitAndCheese,          CottageCheeseWithAppleSauce, BananaWithPeanutButter,       {},                          {},                      {}, {} ];
+const Dinner    = [ '18:00', 'Middag',    MarinatedBeans,          LemonSalmon,                 Chicken,                      {},                          {},                      {}, Chicken ];
+const Snack3    = [ '21:00', 'Mellanmål', BananaWithPeanutButter,  GreekYoghurtWithGranola,     DriedApricotAndPistachionuts, CottageCheeseWithAppleSauce, {},                      {}, {} ];
 
 export default [
     Breakfast,

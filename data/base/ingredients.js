@@ -424,15 +424,15 @@ export const AppleSauce = {
 export const CookingCream = {
     measure: 'gram',
     amount: 100,
-    name: 'Matlagningsgrädda (5%)',
+    name: 'Matlagningsgrädde (5%)',
     fat: 5.4,
     carb: 5.8,
     protein: 3.3
 };
 
 export const Lemon = {
-    measure: 'gram',
-    amount: 100,
+    measure: 'st',
+    amount: 1,
     name: 'Citron',
     fat: 0,
     carb: 12,
@@ -464,4 +464,13 @@ export const Hummus = {
     fat: 10,
     carb: 14,
     protein: 16
+};
+
+export const Strawberries = {
+    measure: 'gram',
+    amount: 100,
+    name: 'Jordgubbar',
+    fat: 0.2,
+    carb: 8.3,
+    protein: 0.5
 };

@@ -1066,15 +1066,15 @@ var AppleSauce = exports.AppleSauce = {
 var CookingCream = exports.CookingCream = {
     measure: 'gram',
     amount: 100,
-    name: 'Matlagningsgrädda (5%)',
+    name: 'Matlagningsgrädde (5%)',
     fat: 5.4,
     carb: 5.8,
     protein: 3.3
 };
 
 var Lemon = exports.Lemon = {
-    measure: 'gram',
-    amount: 100,
+    measure: 'st',
+    amount: 1,
     name: 'Citron',
     fat: 0,
     carb: 12,
@@ -1108,6 +1108,15 @@ var Hummus = exports.Hummus = {
     protein: 16
 };
 
+var Strawberries = exports.Strawberries = {
+    measure: 'gram',
+    amount: 100,
+    name: 'Jordgubbar',
+    fat: 0.2,
+    carb: 8.3,
+    protein: 0.5
+};
+
 },{}],11:[function(require,module,exports){
 'use strict';
 
@@ -1125,12 +1134,12 @@ var _dinner = require('./recipies/dinner');
 
 var _snack = require('./recipies/snack');
 
-var Breakfast = ['07:00', 'Frukost', _breakfast.AvocadoBreakfast, _breakfast.EggBreakfast, _breakfast.ChickenSandwich, _breakfast.SourMilkAndGranolaBreakfast, _breakfast.MilkAndOatmealBreakfast, {}, {}];
-var Snack1 = ['09:30', 'Mellanmål', _snack.SourMilkWithBlueBerries, _snack.Peanut, {}, {}, {}, {}, {}];
-var Lunch = ['12:00', 'Lunch', _lunch.ChickenWraps, _lunch.TunaSalad, _lunch.Omelette, _lunch.ChickenSalad, {}, {}, {}];
-var Snack2 = ['15:30', 'Mellanmål', _snack.FruitAndCheese, _snack.CottageCheeseWithAppleSauce, {}, {}, {}, {}, {}];
-var Dinner = ['18:00', 'Middag', _dinner.LemonSalmon, _dinner.Chicken, {}, {}, _dinner.MarinatedBeans, {}, _dinner.Chicken];
-var Snack3 = ['21:00', 'Mellanmål', _snack.BananaWithPeanutButter, _snack.GreekYoghurtWithGranola, {}, {}, {}, {}, {}];
+var Breakfast = ['07:00', 'Frukost', _breakfast.AvocadoBreakfast, _breakfast.EggBreakfast, _breakfast.SourMilkAndGranolaBreakfast, _breakfast.ChickenSandwich, _breakfast.MilkAndOatmealBreakfast, {}, {}];
+var Snack1 = ['09:30', 'Mellanmål', _snack.SourMilkWithBlueBerries, _snack.Peanut, _snack.MilkAndStrawberries, {}, _snack.SourMilkWithBlueBerries, {}, {}];
+var Lunch = ['12:00', 'Lunch', _lunch.ChickenWraps, _lunch.TunaSalad, _lunch.Omelette, _lunch.ChickenSalad, _lunch.FishSticks, _lunch.BeanSalasWithFetaAndOlives, {}];
+var Snack2 = ['15:30', 'Mellanmål', _snack.FruitAndCheese, _snack.CottageCheeseWithAppleSauce, _snack.BananaWithPeanutButter, {}, {}, {}, {}];
+var Dinner = ['18:00', 'Middag', _dinner.MarinatedBeans, _dinner.LemonSalmon, _dinner.Chicken, {}, {}, {}, _dinner.Chicken];
+var Snack3 = ['21:00', 'Mellanmål', _snack.BananaWithPeanutButter, _snack.GreekYoghurtWithGranola, _snack.DriedApricotAndPistachionuts, _snack.CottageCheeseWithAppleSauce, {}, {}, {}];
 
 exports.default = [Breakfast, Snack1, Lunch, Snack2, Dinner, Snack3];
 
@@ -1249,6 +1258,10 @@ function getRecipe(id) {
             return Lunch.Omelette;
         case Lunch.ChickenSalad.id.toString():
             return Lunch.ChickenSalad;
+        case Lunch.FishSticks.id.toString():
+            return Lunch.FishSticks;
+        case Lunch.BeanSalasWithFetaAndOlives.id.toString():
+            return Lunch.BeanSalasWithFetaAndOlives;
         case Snack.SourMilkWithBlueBerries.id.toString():
             return Snack.SourMilkWithBlueBerries;
         case Snack.CottageCheeseWithAppleSauce.id.toString():
@@ -1261,6 +1274,10 @@ function getRecipe(id) {
             return Snack.BananaWithPeanutButter;
         case Snack.GreekYoghurtWithGranola.id.toString():
             return Snack.GreekYoghurtWithGranola;
+        case Snack.MilkAndStrawberries.id.toString():
+            return Snack.MilkAndStrawberries;
+        case Snack.DriedApricotAndPistachionuts.id.toString():
+            return Snack.DriedApricotAndPistachionuts;
         case Dinner.Chicken.id.toString():
             return Dinner.Chicken;
         case Dinner.MarinatedBeans.id.toString():
@@ -1278,7 +1295,7 @@ function getRecipe(id) {
 Object.defineProperty(exports, "__esModule", {
     value: true
 });
-exports.ChickenSalad = exports.ChickenWraps = exports.Omelette = exports.TunaSalad = undefined;
+exports.BeanSalasWithFetaAndOlives = exports.FishSticks = exports.ChickenSalad = exports.ChickenWraps = exports.Omelette = exports.TunaSalad = undefined;
 
 var _ingredients = require('../base/ingredients');
 
@@ -1303,7 +1320,19 @@ var ChickenWraps = exports.ChickenWraps = {
 var ChickenSalad = exports.ChickenSalad = {
     id: 204,
     name: 'Kyckling sallad',
-    ingredients: [{ amount: 0.5, ingredient: _ingredients.Chicken }, { amount: 0.2, ingredient: _ingredients.Olives }, { amount: 2, ingredient: _ingredients.LettuceLeaf }, { amount: 0.1, ingredient: _ingredients.FetaCheeze }, { amount: 1, ingredient: _ingredients.MiniBaguette }]
+    ingredients: [{ amount: 0.5, ingredient: _ingredients.Chicken }, { amount: 0.2, ingredient: _ingredients.Olives }, { amount: 2, ingredient: _ingredients.LettuceLeaf }, { amount: 0.1, ingredient: _ingredients.FetaCheese }, { amount: 1, ingredient: _ingredients.MiniBaguette }]
+};
+
+var FishSticks = exports.FishSticks = {
+    id: 205,
+    name: 'Fiskpinnar',
+    ingredients: [{ amount: 4, ingredient: _ingredients.FishStick }, { amount: 0.25, ingredient: _ingredients.Lemon }, { amount: 0.5, ingredient: _ingredients.Carrot }]
+};
+
+var BeanSalasWithFetaAndOlives = exports.BeanSalasWithFetaAndOlives = {
+    id: 206,
+    name: 'Bönallad med fetaost och svarta oliver',
+    ingredients: [{ amount: 1, ingredient: _ingredients.WhiteBeans }, { amount: 0.1, ingredient: _ingredients.FetaCheese }, { amount: 0.1, ingredient: _ingredients.Olives }, { amount: 0.5, ingredient: _ingredients.Tomato }]
 };
 
 },{"../base/ingredients":10}],16:[function(require,module,exports){
@@ -1312,7 +1341,7 @@ var ChickenSalad = exports.ChickenSalad = {
 Object.defineProperty(exports, "__esModule", {
     value: true
 });
-exports.GreekYoghurtWithGranola = exports.CottageCheeseWithAppleSauce = exports.BananaWithPeanutButter = exports.Peanut = exports.PeanutSnack = exports.FruitAndCheese = exports.SourMilkWithBlueBerries = undefined;
+exports.DriedApricotAndPistachionuts = exports.MilkAndStrawberries = exports.GreekYoghurtWithGranola = exports.CottageCheeseWithAppleSauce = exports.BananaWithPeanutButter = exports.Peanut = exports.PeanutSnack = exports.FruitAndCheese = exports.SourMilkWithBlueBerries = undefined;
 
 var _ingredients = require('../base/ingredients');
 
@@ -1325,7 +1354,7 @@ var SourMilkWithBlueBerries = exports.SourMilkWithBlueBerries = {
 var FruitAndCheese = exports.FruitAndCheese = {
     id: 302,
     name: 'Frukt med ost',
-    ingredients: [{ amount: 0.2, ingredient: _ingredients.DriedApricot }, { amount: 0.1, ingredient: _ingredients.Cheese }]
+    ingredients: [{ amount: 0.4, ingredient: _ingredients.DriedApricot }, { amount: 0.1, ingredient: _ingredients.Cheese }]
 };
 
 var PeanutSnack = exports.PeanutSnack = {
@@ -1353,14 +1382,17 @@ var GreekYoghurtWithGranola = exports.GreekYoghurtWithGranola = {
     ingredients: [{ amount: 0.5, ingredient: _ingredients.GreekYogurt }, { amount: 0.25, ingredient: _ingredients.Granola }]
 };
 
-// export const GreekYoghurtWithGranola = {
-//     id: 307,
-//     name: 'Grekisk yoghurt med granola',
-//     ingredients: [
-//         { amount : 0.5, ingredient: GreekYogurt },
-//         { amount : 0.25, ingredient: Granola }
-//     ]
-// };
+var MilkAndStrawberries = exports.MilkAndStrawberries = {
+    id: 307,
+    name: 'Mjölk med Jordgubbar',
+    ingredients: [{ amount: 1, ingredient: _ingredients.Milk }, { amount: 0.5, ingredient: _ingredients.Strawberries }]
+};
+
+var DriedApricotAndPistachionuts = exports.DriedApricotAndPistachionuts = {
+    id: 308,
+    name: 'Torkade aprikoser och pistagenötter',
+    ingredients: [{ amount: 0.3, ingredient: _ingredients.DriedApricot }, { amount: 0.1, ingredient: _ingredients.Pistachionut }]
+};
 
 },{"../base/ingredients":10}],17:[function(require,module,exports){
 var pSlice = Array.prototype.slice;

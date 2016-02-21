@@ -9,7 +9,10 @@ import {
     AppleSauce,
     Cheese,
     GreekYogurt,
-    Granola
+    Granola,
+    Milk,
+    Strawberries,
+    Pistachionut
 } from '../base/ingredients';
 
 export const SourMilkWithBlueBerries = {
@@ -25,7 +28,7 @@ export const FruitAndCheese = {
     id: 302,
     name: 'Frukt med ost',
     ingredients: [
-        { amount : 0.2, ingredient: DriedApricot },
+        { amount : 0.4, ingredient: DriedApricot },
         { amount : 0.1, ingredient: Cheese }
     ]
 };
@@ -67,11 +70,20 @@ export const GreekYoghurtWithGranola = {
     ]
 };
 
-// export const GreekYoghurtWithGranola = {
-//     id: 307,
-//     name: 'Grekisk yoghurt med granola',
-//     ingredients: [
-//         { amount : 0.5, ingredient: GreekYogurt },
-//         { amount : 0.25, ingredient: Granola }
-//     ]
-// };
+export const MilkAndStrawberries = {
+    id: 307,
+    name: 'Mjölk med Jordgubbar',
+    ingredients: [
+        { amount : 1, ingredient: Milk },
+        { amount : 0.5, ingredient: Strawberries }
+    ]
+};
+
+export const DriedApricotAndPistachionuts = {
+    id: 308,
+    name: 'Torkade aprikoser och pistagenötter',
+    ingredients: [
+        { amount : 0.3, ingredient: DriedApricot },
+        { amount : 0.1, ingredient: Pistachionut }
+    ]
+};
