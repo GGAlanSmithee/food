@@ -997,7 +997,101 @@ var Strawberries = exports.Strawberries = {
     protein: 0.5
 };
 
+<<<<<<< HEAD
 },{}],10:[function(require,module,exports){
+=======
+var LambChop = exports.LambChop = {
+    measure: 'gram',
+    amount: 100,
+    name: 'Lammkotletter',
+    fat: 14,
+    carb: 0,
+    protein: 26
+};
+
+var Halloumi = exports.Halloumi = {
+    measure: 'gram',
+    amount: 100,
+    name: 'Halloumi',
+    fat: 24.6,
+    carb: 1.6,
+    protein: 20.8
+};
+
+var WokVegetables = exports.WokVegetables = {
+    measure: 'gram',
+    amount: 100,
+    name: 'Wok Grönsaker',
+    fat: 0.4,
+    carb: 4.5,
+    protein: 1.5
+};
+
+var PiecedMeat = exports.PiecedMeat = {
+    measure: 'gram',
+    amount: 100,
+    name: 'Kött Grytbitar',
+    fat: 8.0,
+    carb: 0,
+    protein: 20.5
+};
+
+var BrownRice = exports.BrownRice = {
+    measure: 'gram',
+    amount: 100,
+    name: 'Brunt Ris',
+    fat: 1,
+    carb: 23,
+    protein: 3
+};
+
+var Bulgur = exports.Bulgur = {
+    measure: 'gram',
+    amount: 100,
+    name: 'Bulgur',
+    fat: 0,
+    carb: 19,
+    protein: 3
+};
+
+var Quark = exports.Quark = {
+    measure: 'gram',
+    amount: 100,
+    name: 'Kvarg',
+    fat: 0.3,
+    carb: 2.9,
+    protein: 12
+};
+
+var ChiaSeeds = exports.ChiaSeeds = {
+    measure: 'matsked',
+    amount: 1,
+    name: 'Chiafrön',
+    fat: 4.65,
+    carb: 6.6,
+    protein: 2.4
+};
+
+var Cocoa = exports.Cocoa = {
+    measure: 'tesked',
+    amount: 1,
+    name: 'Kakao',
+    fat: 0,
+    carb: 0.2,
+    protein: 0
+};
+
+var VanillaSugar = exports.VanillaSugar = {
+    measure: 'tesked',
+    amount: 100,
+    name: '',
+    fat: 0,
+    carb: 4,
+    protein: 0
+};
+
+},{}],11:[function(require,module,exports){
+>>>>>>> dev
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -1014,12 +1108,12 @@ var _dinner = require('./recipies/dinner');
 
 var _snack = require('./recipies/snack');
 
-var Breakfast = ['07:00', 'Frukost', _breakfast.AvocadoBreakfast, _breakfast.EggBreakfast, _breakfast.SourMilkAndGranolaBreakfast, _breakfast.ChickenSandwich, _breakfast.MilkAndOatmealBreakfast, {}, {}];
-var Snack1 = ['09:30', 'Mellanmål', _snack.SourMilkWithBlueBerries, _snack.Peanut, _snack.MilkAndStrawberries, {}, _snack.SourMilkWithBlueBerries, {}, {}];
-var Lunch = ['12:00', 'Lunch', _lunch.ChickenWraps, _lunch.TunaSalad, _lunch.Omelette, _lunch.ChickenSalad, _lunch.FishSticks, _lunch.BeanSalasWithFetaAndOlives, {}];
-var Snack2 = ['15:30', 'Mellanmål', _snack.FruitAndCheese, _snack.CottageCheeseWithAppleSauce, _snack.BananaWithPeanutButter, {}, {}, {}, {}];
-var Dinner = ['18:00', 'Middag', _dinner.MarinatedBeans, _dinner.LemonSalmon, _dinner.Chicken, {}, {}, {}, _dinner.Chicken];
-var Snack3 = ['21:00', 'Mellanmål', _snack.BananaWithPeanutButter, _snack.GreekYoghurtWithGranola, _snack.DriedApricotAndPistachionuts, _snack.CottageCheeseWithAppleSauce, {}, {}, {}];
+var Breakfast = ['07:00', 'Frukost', _breakfast.AvocadoBreakfast, _breakfast.SourMilkAndGranolaBreakfast, _breakfast.EggBreakfast, _breakfast.ChickenSandwich, _breakfast.AvocadoBreakfast, _breakfast.MilkAndOatmealBreakfast, _breakfast.EggBreakfast];
+var Snack1 = ['09:30', 'Mellanmål', _snack.SourMilkWithBlueBerries, _snack.Peanut, _snack.MilkAndStrawberries, _snack.ChiaPudding, _snack.SourMilkWithBlueBerries, _snack.BoiledEgg, _snack.FruitAndCheese];
+var Lunch = ['12:00', 'Lunch', _lunch.ChickenWraps, _lunch.TunaSalad, _lunch.Omelette, _lunch.ChickenSalad, _lunch.FishSticks, _lunch.ChickenWithBulgur, _lunch.BeanSalasWithFetaAndOlives];
+var Snack2 = ['15:30', 'Mellanmål', _snack.FruitAndCheese, _snack.CottageCheeseWithAppleSauce, _snack.BananaWithPeanutButter, _snack.BoiledEgg, _snack.DriedApricotAndPistachionuts, _snack.Peanut, {}];
+var Dinner = ['18:00', 'Middag', _dinner.MarinatedBeans, _dinner.LemonSalmon, _dinner.Chicken, _dinner.PiecedMeatWithWok, _dinner.Lamb, {}, _dinner.Chicken];
+var Snack3 = ['21:00', 'Mellanmål', _snack.BananaWithPeanutButter, _snack.GreekYoghurtWithGranola, _snack.DriedApricotAndPistachionuts, _snack.CottageCheeseWithAppleSauce, _snack.MilkAndStrawberries, _snack.ChiaPudding, {}];
 
 exports.default = [Breakfast, Snack1, Lunch, Snack2, Dinner, Snack3];
 
@@ -1069,7 +1163,7 @@ var ChickenSandwich = exports.ChickenSandwich = {
 Object.defineProperty(exports, "__esModule", {
     value: true
 });
-exports.LemonSalmon = exports.MarinatedBeans = exports.Chicken = undefined;
+exports.PiecedMeatWithWok = exports.Lamb = exports.LemonSalmon = exports.MarinatedBeans = exports.Chicken = undefined;
 
 var _ingredients = require('../base/ingredients');
 
@@ -1092,7 +1186,23 @@ var LemonSalmon = exports.LemonSalmon = {
     ingredients: [{ amount: 0.5, ingredient: _ingredients.Salmon }, { amount: 0.5, ingredient: _ingredients.CookingCream }, { amount: 0.5, ingredient: _ingredients.Lemon }, { amount: 0.1, ingredient: _ingredients.Dill }, { amount: 0.5, ingredient: _ingredients.WhiteBeans }, { amount: 1, ingredient: _ingredients.Asparagus }]
 };
 
+<<<<<<< HEAD
 },{"../base/ingredients":9}],13:[function(require,module,exports){
+=======
+var Lamb = exports.Lamb = {
+    id: 404,
+    name: 'Lamm',
+    ingredients: [{ amount: 1, ingredient: _ingredients.LambChop }, { amount: 0.2, ingredient: _ingredients.FetaCheese }, { amount: 0.1, ingredient: _ingredients.Halloumi }, { amount: 0.5, ingredient: _ingredients.Tomato }, { amount: 0.5, ingredient: _ingredients.Onion }, { amount: 0.2, ingredient: _ingredients.Olives }]
+};
+
+var PiecedMeatWithWok = exports.PiecedMeatWithWok = {
+    id: 405,
+    name: 'Köttbitar med wokade grönsaker',
+    ingredients: [{ amount: 1, ingredient: _ingredients.WokVegetables }, { amount: 1, ingredient: _ingredients.PiecedMeat }, { amount: 1, ingredient: _ingredients.BrownRice }]
+};
+
+},{"../base/ingredients":10}],14:[function(require,module,exports){
+>>>>>>> dev
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -1142,6 +1252,8 @@ function getRecipe(id) {
             return Lunch.FishSticks;
         case Lunch.BeanSalasWithFetaAndOlives.id.toString():
             return Lunch.BeanSalasWithFetaAndOlives;
+        case Lunch.ChickenWithBulgur.id.toString():
+            return Lunch.ChickenWithBulgur;
         case Snack.SourMilkWithBlueBerries.id.toString():
             return Snack.SourMilkWithBlueBerries;
         case Snack.CottageCheeseWithAppleSauce.id.toString():
@@ -1158,12 +1270,20 @@ function getRecipe(id) {
             return Snack.MilkAndStrawberries;
         case Snack.DriedApricotAndPistachionuts.id.toString():
             return Snack.DriedApricotAndPistachionuts;
+        case Snack.BoiledEgg.id.toString():
+            return Snack.BoiledEgg;
+        case Snack.ChiaPudding.id.toString():
+            return Snack.ChiaPudding;
         case Dinner.Chicken.id.toString():
             return Dinner.Chicken;
         case Dinner.MarinatedBeans.id.toString():
             return Dinner.MarinatedBeans;
         case Dinner.LemonSalmon.id.toString():
             return Dinner.LemonSalmon;
+        case Dinner.Lamb.id.toString():
+            return Dinner.Lamb;
+        case Dinner.PiecedMeatWithWok.id.toString():
+            return Dinner.PiecedMeatWithWok;
         default:
             return {};
     }
@@ -1175,7 +1295,7 @@ function getRecipe(id) {
 Object.defineProperty(exports, "__esModule", {
     value: true
 });
-exports.BeanSalasWithFetaAndOlives = exports.FishSticks = exports.ChickenSalad = exports.ChickenWraps = exports.Omelette = exports.TunaSalad = undefined;
+exports.ChickenWithBulgur = exports.BeanSalasWithFetaAndOlives = exports.FishSticks = exports.ChickenSalad = exports.ChickenWraps = exports.Omelette = exports.TunaSalad = undefined;
 
 var _ingredients = require('../base/ingredients');
 
@@ -1215,13 +1335,23 @@ var BeanSalasWithFetaAndOlives = exports.BeanSalasWithFetaAndOlives = {
     ingredients: [{ amount: 1, ingredient: _ingredients.WhiteBeans }, { amount: 0.1, ingredient: _ingredients.FetaCheese }, { amount: 0.1, ingredient: _ingredients.Olives }, { amount: 0.5, ingredient: _ingredients.Tomato }]
 };
 
+<<<<<<< HEAD
 },{"../base/ingredients":9}],15:[function(require,module,exports){
+=======
+var ChickenWithBulgur = exports.ChickenWithBulgur = {
+    id: 207,
+    name: 'Kyklingröra med bulgur',
+    ingredients: [{ amount: 1, ingredient: _ingredients.Chicken }, { amount: 1, ingredient: _ingredients.WokVegetables }, { amount: 0.5, ingredient: _ingredients.Bulgur }, { amount: 0.2, ingredient: _ingredients.Quark }]
+};
+
+},{"../base/ingredients":10}],16:[function(require,module,exports){
+>>>>>>> dev
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
     value: true
 });
-exports.DriedApricotAndPistachionuts = exports.MilkAndStrawberries = exports.GreekYoghurtWithGranola = exports.CottageCheeseWithAppleSauce = exports.BananaWithPeanutButter = exports.Peanut = exports.PeanutSnack = exports.FruitAndCheese = exports.SourMilkWithBlueBerries = undefined;
+exports.ChiaPudding = exports.BoiledEgg = exports.DriedApricotAndPistachionuts = exports.MilkAndStrawberries = exports.GreekYoghurtWithGranola = exports.CottageCheeseWithAppleSauce = exports.BananaWithPeanutButter = exports.Peanut = exports.PeanutSnack = exports.FruitAndCheese = exports.SourMilkWithBlueBerries = undefined;
 
 var _ingredients = require('../base/ingredients');
 
@@ -1274,7 +1404,23 @@ var DriedApricotAndPistachionuts = exports.DriedApricotAndPistachionuts = {
     ingredients: [{ amount: 0.3, ingredient: _ingredients.DriedApricot }, { amount: 0.1, ingredient: _ingredients.Pistachionut }]
 };
 
+<<<<<<< HEAD
 },{"../base/ingredients":9}],16:[function(require,module,exports){
+=======
+var BoiledEgg = exports.BoiledEgg = {
+    id: 309,
+    name: 'Kokt ägg',
+    ingredients: [{ amount: 1, ingredient: _ingredients.Egg }]
+};
+
+var ChiaPudding = exports.ChiaPudding = {
+    id: 310,
+    name: 'Chiapudding',
+    ingredients: [{ amount: 1, ingredient: _ingredients.Milk }, { amount: 1.5, ingredient: _ingredients.ChiaSeeds }, { amount: 0.5, ingredient: _ingredients.Cocoa }, { amount: 0.25, ingredient: _ingredients.VanillaSugar }]
+};
+
+},{"../base/ingredients":10}],17:[function(require,module,exports){
+>>>>>>> dev
 var pSlice = Array.prototype.slice;
 var objectKeys = require('./lib/keys.js');
 var isArguments = require('./lib/is_arguments.js');

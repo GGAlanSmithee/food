@@ -10,7 +10,15 @@ import {
     Lemon,
     Dill,
     WhiteBeans,
-    Asparagus
+    Asparagus,
+    LambChop,
+    FetaCheese,
+    Halloumi,
+    Tomato,
+    Olives,
+    WokVegetables,
+    PiecedMeat,
+    BrownRice
 } from '../base/ingredients';
 
 const ChickenDinner = {
@@ -45,5 +53,28 @@ export const LemonSalmon = {
         { amount : 0.1, ingredient : Dill },
         { amount : 0.5, ingredient : WhiteBeans },
         { amount : 1, ingredient : Asparagus },
+    ]
+};
+
+export const Lamb = {
+    id: 404,
+    name: 'Lamm',
+    ingredients: [
+        { amount : 1, ingredient : LambChop },
+        { amount : 0.2, ingredient : FetaCheese },
+        { amount : 0.1, ingredient : Halloumi },
+        { amount : 0.5, ingredient : Tomato },
+        { amount : 0.5, ingredient : Onion },
+        { amount : 0.2, ingredient : Olives }
+    ]
+};
+
+export const PiecedMeatWithWok = {
+    id: 405,
+    name: 'Köttbitar med wokade grönsaker',
+    ingredients: [
+        { amount : 1, ingredient : WokVegetables },
+        { amount : 1, ingredient : PiecedMeat },
+        { amount : 1, ingredient : BrownRice }
     ]
 };

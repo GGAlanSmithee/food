@@ -16,7 +16,10 @@ import {
     FishStick,
     Carrot,
     Lemon,
-    WhiteBeans
+    WhiteBeans,
+    Bulgur,
+    WokVegetables,
+    Quark
 } from '../base/ingredients';
 
 export const TunaSalad = {
@@ -84,5 +87,16 @@ export const BeanSalasWithFetaAndOlives = {
         { amount: 0.1, ingredient: FetaCheese },
         { amount: 0.1, ingredient: Olives },
         { amount: 0.5, ingredient: Tomato }
+    ]
+};
+
+export const ChickenWithBulgur = {
+    id: 207,
+    name: 'Kyklingröra med bulgur',
+    ingredients: [
+        { amount: 1, ingredient: Chicken },
+        { amount: 1, ingredient: WokVegetables },
+        { amount: 0.5, ingredient: Bulgur },
+        { amount: 0.2, ingredient: Quark }
     ]
 };

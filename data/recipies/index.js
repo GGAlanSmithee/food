@@ -16,6 +16,7 @@ export function getRecipe(id) {
         case Lunch.ChickenSalad.id.toString() : return Lunch.ChickenSalad;
         case Lunch.FishSticks.id.toString() : return Lunch.FishSticks;
         case Lunch.BeanSalasWithFetaAndOlives.id.toString() : return Lunch.BeanSalasWithFetaAndOlives;
+        case Lunch.ChickenWithBulgur.id.toString() : return Lunch.ChickenWithBulgur;
         case Snack.SourMilkWithBlueBerries.id.toString() : return Snack.SourMilkWithBlueBerries;
         case Snack.CottageCheeseWithAppleSauce.id.toString() : return Snack.CottageCheeseWithAppleSauce;
         case Snack.FruitAndCheese.id.toString() : return Snack.FruitAndCheese;
@@ -24,9 +25,13 @@ export function getRecipe(id) {
         case Snack.GreekYoghurtWithGranola.id.toString() : return Snack.GreekYoghurtWithGranola;
         case Snack.MilkAndStrawberries.id.toString() : return Snack.MilkAndStrawberries;
         case Snack.DriedApricotAndPistachionuts.id.toString() : return Snack.DriedApricotAndPistachionuts;
+        case Snack.BoiledEgg.id.toString() : return Snack.BoiledEgg;
+        case Snack.ChiaPudding.id.toString() : return Snack.ChiaPudding;
         case Dinner.Chicken.id.toString() : return Dinner.Chicken;
         case Dinner.MarinatedBeans.id.toString() : return Dinner.MarinatedBeans;
         case Dinner.LemonSalmon.id.toString() : return Dinner.LemonSalmon;
+        case Dinner.Lamb.id.toString() : return Dinner.Lamb;
+        case Dinner.PiecedMeatWithWok.id.toString() : return Dinner.PiecedMeatWithWok;
         default : return { };
     }
 }
