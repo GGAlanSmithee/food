@@ -997,9 +997,6 @@ var Strawberries = exports.Strawberries = {
     protein: 0.5
 };
 
-<<<<<<< HEAD
-},{}],10:[function(require,module,exports){
-=======
 var LambChop = exports.LambChop = {
     measure: 'gram',
     amount: 100,
@@ -1090,8 +1087,7 @@ var VanillaSugar = exports.VanillaSugar = {
     protein: 0
 };
 
-},{}],11:[function(require,module,exports){
->>>>>>> dev
+},{}],10:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -1186,9 +1182,6 @@ var LemonSalmon = exports.LemonSalmon = {
     ingredients: [{ amount: 0.5, ingredient: _ingredients.Salmon }, { amount: 0.5, ingredient: _ingredients.CookingCream }, { amount: 0.5, ingredient: _ingredients.Lemon }, { amount: 0.1, ingredient: _ingredients.Dill }, { amount: 0.5, ingredient: _ingredients.WhiteBeans }, { amount: 1, ingredient: _ingredients.Asparagus }]
 };
 
-<<<<<<< HEAD
-},{"../base/ingredients":9}],13:[function(require,module,exports){
-=======
 var Lamb = exports.Lamb = {
     id: 404,
     name: 'Lamm',
@@ -1201,8 +1194,7 @@ var PiecedMeatWithWok = exports.PiecedMeatWithWok = {
     ingredients: [{ amount: 1, ingredient: _ingredients.WokVegetables }, { amount: 1, ingredient: _ingredients.PiecedMeat }, { amount: 1, ingredient: _ingredients.BrownRice }]
 };
 
-},{"../base/ingredients":10}],14:[function(require,module,exports){
->>>>>>> dev
+},{"../base/ingredients":9}],13:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -1335,17 +1327,13 @@ var BeanSalasWithFetaAndOlives = exports.BeanSalasWithFetaAndOlives = {
     ingredients: [{ amount: 1, ingredient: _ingredients.WhiteBeans }, { amount: 0.1, ingredient: _ingredients.FetaCheese }, { amount: 0.1, ingredient: _ingredients.Olives }, { amount: 0.5, ingredient: _ingredients.Tomato }]
 };
 
-<<<<<<< HEAD
-},{"../base/ingredients":9}],15:[function(require,module,exports){
-=======
 var ChickenWithBulgur = exports.ChickenWithBulgur = {
     id: 207,
     name: 'Kyklingröra med bulgur',
     ingredients: [{ amount: 1, ingredient: _ingredients.Chicken }, { amount: 1, ingredient: _ingredients.WokVegetables }, { amount: 0.5, ingredient: _ingredients.Bulgur }, { amount: 0.2, ingredient: _ingredients.Quark }]
 };
 
-},{"../base/ingredients":10}],16:[function(require,module,exports){
->>>>>>> dev
+},{"../base/ingredients":9}],15:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -1404,9 +1392,6 @@ var DriedApricotAndPistachionuts = exports.DriedApricotAndPistachionuts = {
     ingredients: [{ amount: 0.3, ingredient: _ingredients.DriedApricot }, { amount: 0.1, ingredient: _ingredients.Pistachionut }]
 };
 
-<<<<<<< HEAD
-},{"../base/ingredients":9}],16:[function(require,module,exports){
-=======
 var BoiledEgg = exports.BoiledEgg = {
     id: 309,
     name: 'Kokt ägg',
@@ -1419,8 +1404,7 @@ var ChiaPudding = exports.ChiaPudding = {
     ingredients: [{ amount: 1, ingredient: _ingredients.Milk }, { amount: 1.5, ingredient: _ingredients.ChiaSeeds }, { amount: 0.5, ingredient: _ingredients.Cocoa }, { amount: 0.25, ingredient: _ingredients.VanillaSugar }]
 };
 
-},{"../base/ingredients":10}],17:[function(require,module,exports){
->>>>>>> dev
+},{"../base/ingredients":9}],16:[function(require,module,exports){
 var pSlice = Array.prototype.slice;
 var objectKeys = require('./lib/keys.js');
 var isArguments = require('./lib/is_arguments.js');
