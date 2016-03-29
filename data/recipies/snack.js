@@ -12,7 +12,11 @@ import {
     Granola,
     Milk,
     Strawberries,
-    Pistachionut
+    Pistachionut,
+    Egg,
+    ChiaSeeds,
+    Cocoa,
+    VanillaSugar
 } from '../base/ingredients';
 
 export const SourMilkWithBlueBerries = {
@@ -85,5 +89,24 @@ export const DriedApricotAndPistachionuts = {
     ingredients: [
         { amount : 0.3, ingredient: DriedApricot },
         { amount : 0.1, ingredient: Pistachionut }
+    ]
+};
+
+export const BoiledEgg = {
+    id: 309,
+    name: 'Kokt ägg',
+    ingredients: [
+        { amount : 1, ingredient: Egg }
+    ]
+};
+
+export const ChiaPudding = {
+    id: 310,
+    name: 'Chiapudding',
+    ingredients: [
+        { amount : 1, ingredient: Milk },
+        { amount : 1.5, ingredient: ChiaSeeds },
+        { amount : 0.5, ingredient: Cocoa },
+        { amount : 0.25, ingredient: VanillaSugar }
     ]
 };

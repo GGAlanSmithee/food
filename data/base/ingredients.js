@@ -474,3 +474,93 @@ export const Strawberries = {
     carb: 8.3,
     protein: 0.5
 };
+
+export const LambChop = {
+    measure: 'gram',
+    amount: 100,
+    name: 'Lammkotletter',
+    fat: 14,
+    carb: 0,
+    protein: 26
+};
+
+export const Halloumi = {
+    measure: 'gram',
+    amount: 100,
+    name: 'Halloumi',
+    fat: 24.6,
+    carb: 1.6,
+    protein: 20.8
+};
+
+export const WokVegetables = {
+    measure: 'gram',
+    amount: 100,
+    name: 'Wok Grönsaker',
+    fat: 0.4,
+    carb: 4.5,
+    protein: 1.5
+};
+
+export const PiecedMeat = {
+    measure: 'gram',
+    amount: 100,
+    name: 'Kött Grytbitar',
+    fat: 8.0,
+    carb: 0,
+    protein: 20.5
+};
+
+export const BrownRice = {
+    measure: 'gram',
+    amount: 100,
+    name: 'Brunt Ris',
+    fat: 1,
+    carb: 23,
+    protein: 3
+};
+
+export const Bulgur = {
+    measure: 'gram',
+    amount: 100,
+    name: 'Bulgur',
+    fat: 0,
+    carb: 19,
+    protein: 3
+};
+
+export const Quark = {
+    measure: 'gram',
+    amount: 100,
+    name: 'Kvarg',
+    fat: 0.3,
+    carb: 2.9,
+    protein: 12
+};
+
+export const ChiaSeeds = {
+    measure: 'matsked',
+    amount: 1,
+    name: 'Chiafrön',
+    fat: 4.65,
+    carb: 6.6,
+    protein: 2.4
+};
+
+export const Cocoa = {
+    measure: 'tesked',
+    amount: 1,
+    name: 'Kakao',
+    fat: 0,
+    carb: 0.2,
+    protein: 0
+};
+
+export const VanillaSugar = {
+    measure: 'tesked',
+    amount: 100,
+    name: '',
+    fat: 0,
+    carb: 4,
+    protein: 0
+};
